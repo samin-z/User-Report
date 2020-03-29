@@ -38,7 +38,7 @@ class PanelController extends Controller
         $que = $this->Browse($request);
 
         // "paginate" is used for reading bulk records from database which helps with pagination
-        $reports = $que->paginate(2);
+        $reports = $que->paginate(10);
         return view('cp-index',['user'=>Auth::user(),'reports'=>$reports]);
     }
 

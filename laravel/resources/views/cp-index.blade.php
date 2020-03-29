@@ -19,8 +19,8 @@
         <div class="card-body">
             <form class="alert alert-light search-wrapper" method="get">
                 <div class="col-md-8 col-12 pull-left">
-                    <span class="item">From:</span><input type="text" name="date_start" class="datepicker item">
-                    <span class="item">To:</span><input type="text" name="date_end" class="datepicker item">
+                    <span class="item">From:</span><input type="text" name="date_start" value="{{Request::input('date_start')}}" class="datepicker item">
+                    <span class="item">To:</span><input type="text" name="date_end" value="{{Request::input('date_end')}}"  class="datepicker item">
                 </div>
                 <div class="col-md-2 col-12 pull-left">
                     <button type="submit" class="col-xs-12 btn btn-danger btn-search item"><i class="fa fa-search-plus"></i></button>
