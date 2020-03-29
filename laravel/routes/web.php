@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'HomeController@index')->name('index');
+
 Route::post('/user/submit', 'UserController@store')->name('user_form_store');
 Route::get('/report/{id}', 'ReportController@show')->name('report_form');
-Route::post('/report/store', 'ReportController@store')->name('report_form_store');
+Route::post('/report/store/{id}', 'ReportController@store')->name('report_form_store');
 
 //
 Auth::routes();

@@ -18,6 +18,37 @@
     margin: 0px;
     padding: 0px;
 }
+.report-ul li
+{
+    margin: 10px 0px;
+}
 #error-toast , #success-toast
 { position: fixed; max-width: 500px ; font-family: naskh; min-width: 300px ;  right: 20px ; bottom: 0px ;  z-index: 99999 ; display: none ; color: black}
 #error-toast a , #success-toast a { color: black}
+
+.add-task
+{
+    color: green;
+    margin-top: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.datepicker
+{
+
+    border: solid 1px #eee;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0px 8px;
+
+}
+.report-table
+{
+    list-style: none;
+    padding: 0px;
+}
+.report-table .table-header span
+{
+    display: inline-block;
+}
