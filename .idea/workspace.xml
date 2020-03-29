@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/PanelController.php" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/PanelController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php" afterPath="$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/routes/web.php" afterPath="$PROJECT_DIR$/laravel/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/report.css" afterPath="$PROJECT_DIR$/public/css/report.css" />
     </list>
     <ignored path="digitalreporting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="cp-index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+            <state relative-caret-position="387">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding>
                 <element signature="e#327#353#0#HTML" expanded="true" />
                 <element signature="e#722#744#0#HTML" expanded="true" />
@@ -52,36 +52,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="report.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/report.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+            <state relative-caret-position="491">
+              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PanelController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PanelController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel/app/Http/Controllers/PanelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="112" column="43" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+            <state relative-caret-position="461">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
                 <element signature="e#220#296#0#PHP" expanded="false" />
-                <element signature="e#1053#1182#0#PHP" expanded="false" />
+                <element signature="e#1052#1181#0#PHP" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="report-pdf-form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel/resources/views/report-pdf-form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="52" column="84" selection-start-line="52" selection-start-column="84" selection-end-line="52" selection-end-column="84" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -114,11 +104,11 @@
         <option value="$PROJECT_DIR$/laravel/app/Report.php" />
         <option value="$PROJECT_DIR$/laravel/resources/views/master.blade.php" />
         <option value="$PROJECT_DIR$/laravel/resources/views/report-view.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/report.css" />
         <option value="$PROJECT_DIR$/laravel/routes/web.php" />
-        <option value="$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php" />
         <option value="$PROJECT_DIR$/laravel/resources/views/report-pdf-form.blade.php" />
         <option value="$PROJECT_DIR$/laravel/app/Http/Controllers/PanelController.php" />
+        <option value="$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/report.css" />
       </list>
     </option>
   </component>
@@ -594,12 +584,12 @@
       <workItem from="1585404494296" duration="7017000" />
       <workItem from="1585418252274" duration="1858000" />
       <workItem from="1585428482797" duration="638000" />
-      <workItem from="1585480112760" duration="16505000" />
+      <workItem from="1585480112760" duration="16752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34846000" />
+    <option name="totallyTimeSpent" value="35093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -930,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/report.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel/app/Http/Controllers/ReportController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -951,19 +933,6 @@
         <state relative-caret-position="368">
           <caret line="25" column="80" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="80" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
-          <folding>
-            <element signature="e#327#353#0#HTML" expanded="true" />
-            <element signature="e#722#744#0#HTML" expanded="true" />
-            <element signature="e#865#888#0#HTML" expanded="true" />
-            <element signature="e#1568#1587#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,13 +954,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel/app/Http/Controllers/PanelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="112" column="43" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+        <state relative-caret-position="461">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
             <element signature="e#220#296#0#PHP" expanded="false" />
-            <element signature="e#1053#1182#0#PHP" expanded="false" />
+            <element signature="e#1052#1181#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel/resources/views/cp-index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="e#327#353#0#HTML" expanded="true" />
+            <element signature="e#722#744#0#HTML" expanded="true" />
+            <element signature="e#865#888#0#HTML" expanded="true" />
+            <element signature="e#1568#1587#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/report.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

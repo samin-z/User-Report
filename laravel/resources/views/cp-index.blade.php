@@ -51,6 +51,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <nav aria-label="Page navigation example " id="custom-navigation">
+                        {{$reports->links()}}
+                    </nav>
                 </div>
             @else
                 <div class="alert alert-warning" role="alert">
