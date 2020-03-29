@@ -46,7 +46,7 @@
                                     <td>{{$u_report->User->name}} {{$u_report->User->last_name}}</td>
                                     <td>{{date("Y-m-d",strtotime($u_report->created_at))}}</td>
                                     <td><a href="{{route('cp_report_view',['id'=>$u_report->id])}}">view</a></td>
-                                    <td>download</td>
+                                    <td><a href="{{route('cp_report_download',['id'=>$u_report->id])}}">PDF</a> </td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -61,7 +61,7 @@
     </div>
     <script>
         $( function() {
-            $( ".datepicker" ).datepicker();
+            $('.datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
         } );
     </script>
 @endsection

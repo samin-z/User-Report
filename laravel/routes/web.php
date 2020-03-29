@@ -23,6 +23,7 @@ Route::post('/report/store/{id}', 'ReportController@store')->name('report_form_s
 ///cp panel
 Route::get('/cp', 'PanelController@index')->name('cp_index');
 Route::get('/cp/report/{id}', 'PanelController@view')->name('cp_report_view');
+Route::get('/cp/pdf/{id}', 'PanelController@download')->name('cp_report_download');
 
 //
 Auth::routes();
