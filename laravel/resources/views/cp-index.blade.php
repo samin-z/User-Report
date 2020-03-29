@@ -17,16 +17,16 @@
             <span class="pull-right" style="margin-top: 3px">{{date('Y-m-d')}}</span>
         </div>
         <div class="card-body">
-            <div class="alert alert-light search-wrapper" role="alert">
+            <form class="alert alert-light search-wrapper" method="get">
                 <div class="col-md-8 col-12 pull-left">
-                    <span class="item">From:</span><input type="text" class="datepicker item">
-                    <span class="item">To:</span><input type="text" class="datepicker item">
+                    <span class="item">From:</span><input type="text" name="date_start" class="datepicker item">
+                    <span class="item">To:</span><input type="text" name="date_end" class="datepicker item">
                 </div>
                 <div class="col-md-2 col-12 pull-left">
-                    <a href="#" class="col-xs-12 btn btn-danger btn-search item"><i class="fa fa-search-plus"></i></a>
+                    <button type="submit" class="col-xs-12 btn btn-danger btn-search item"><i class="fa fa-search-plus"></i></button>
                 </div>
                 <br style="clear: both"/>
-            </div>
+            </form>
             @if(!$reports->isEmpty())
                 <div class="table-responsive">
                     <table class="table table-hover">

@@ -90,3 +90,8 @@
 {
     border-radius: 4px 4px 0px 0px;
 }
+
+.alert-light
+{
+    background: #f7f7f7;
+}
