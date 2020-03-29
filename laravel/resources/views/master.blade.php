@@ -17,6 +17,9 @@
     <script src="{{URL::asset('public/js/bootstrap.js')}}"></script>
     <script src="{{URL::asset('public/js/global.js')}}"></script>
     <script src="{{URL::asset('public/js/script.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 

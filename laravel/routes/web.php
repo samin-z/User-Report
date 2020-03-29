@@ -20,6 +20,10 @@ Route::post('/user/submit', 'UserController@store')->name('user_form_store');
 Route::get('/report/{id}', 'ReportController@show')->name('report_form');
 Route::post('/report/store/{id}', 'ReportController@store')->name('report_form_store');
 
+///cp panel
+Route::get('/cp', 'PanelController@index')->name('cp_index');
+Route::get('/cp/report/{id}', 'PanelController@view')->name('cp_report_view');
+
 //
 Auth::routes();
 

@@ -52,3 +52,41 @@
 {
     display: inline-block;
 }
+
+.ui-widget-header
+{
+    border:1px solid rgba(136, 136, 136, 0.93);
+    background: rgba(136, 136, 136, 0.93);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    color: #2f3031;
+}
+
+.search-wrapper .item
+{
+    float: left;
+}
+.btn-search
+{
+    height: 27px !important;
+    padding: 4px 11px;
+}
+
+@media only screen and (max-width: 500px){
+    .btn-search{margin-left: 8px;}
+    .datepicker {margin-bottom: 10px;}
+}
+
+.cp-header
+{
+    font-weight: bold;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.card-header.bg-dark
+{
+    border-radius: 4px 4px 0px 0px;
+}
