@@ -16,28 +16,20 @@ class PanelController extends Controller
         $this->middleware('auth');
     }
 
-    private function Browse($request)
-    {
-
-        $que = Report::orderBy('id','DESC');
-
-        if($request->input('date_start'))
-            $que->whereDate('created_at' , '>=' ,  $request->input('date_start') ) ;
-        
-        if($request->input('date_end'))
-            $que->whereDate('created_at' , '<=' ,  $request->input('date_end') ) ;
-        
-        return $que;
-    }
 
     function index(Request $request)
     {
         if(!Auth::user()->is_admin)
             abort(403);
 
-        $que = $this->Browse($request);
+        $que = Report::orderBy('id','DESC');
 
-        // "paginate" is used for reading bulk records from database which helps with pagination
+        if($request->input('date_start'))
+            $que->whereDate('created_at' , '>=' ,  $request->input('date_start') ) ;
+
+        if($request->input('date_end'))
+            $que->whereDate('created_at' , '<=' ,  $request->input('date_end') ) ;
+
         $reports = $que->paginate(10);
         return view('cp-index',['user'=>Auth::user(),'reports'=>$reports]);
     }
@@ -52,13 +44,13 @@ class PanelController extends Controller
     {
         //// using "findOrFail" if no matching model exist, it throws an error
         $report = Report::findOrFail($id);
-        $this->download_pdf($report);
+        $html =view('report-pdf-form' ,['report'=>$report]);
+        $this->download_pdf($html);
 //        return view('report-pdf-form',['report',$report]);
     }
 
-    private function download_pdf ($report)
+    private function download_pdf ($html)
     {
-        $html = view('report-pdf-form' ,['report'=>$report]);
         $pdf = new \Elibyy\TCPDF\TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
 

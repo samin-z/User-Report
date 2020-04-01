@@ -43,6 +43,12 @@
                             @foreach($reports as $k=>$u_report)
                                 <tr>
                                     <th scope="row">{{$k+1}}</th>
+                                    {{--$u_report->User--}}
+                                    {{--through "report" model a relation is made with users table--}}
+                                    {{--with foriegn key which is "user_id"--}}
+                                    {{--so $u_report->User is actually a user object--}}
+                                    {{--by going to Report.php file (model) in "app" folder you can see the--}}
+                                    {{--relation--}}
                                     <td>{{$u_report->User->name}} {{$u_report->User->last_name}}</td>
                                     <td>{{date("Y-m-d",strtotime($u_report->created_at))}}</td>
                                     <td><a href="{{route('cp_report_view',['id'=>$u_report->id])}}">view</a></td>

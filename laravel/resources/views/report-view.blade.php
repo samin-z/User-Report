@@ -25,6 +25,13 @@
                     <label class="title" style="margin-bottom: 0px">Task(s) Done:</label>
                     @if(!$report->Task->isEmpty())
                         <ul class="cp-task-ul">
+                            {{--$report->Task--}}
+                            {{--through "report" model a relation is made with ReportTasks table--}}
+                            {{--with foriegn key which is "report_id"--}}
+                            {{--so $report->Task is actually an array of report tasks that their report_id is
+                            equel to the intended report id--}}
+                            {{--by going to Report.php file (model) in "app" folder you can see the--}}
+                            {{--relation--}}
                             @foreach($report->Task as $task)
                                 <li>{{$task->task}}</li>
                             @endforeach

@@ -1,6 +1,8 @@
 function form_data(wrapper){
     data = {};
-
+    //name of the wrapper div is send to this function and using "form-control" the function loop through
+    //all elements with this class and add their values and data-id as key and value to an array
+    // the finall array is return to the function
     $(wrapper).find('.form-control').each(function(){
         data[$(this).data('id')] = $(this).val();
     });
@@ -13,8 +15,11 @@ function form_data(wrapper){
 $(document).on('click' , '.submit-form' , function(){
     form = form_data('.user-form');
     var btn = $(this);
+
+    // loadspiner function is in "global.js" file which disables the button
     loadspiner( btn);
     $.post( btn.data('route') , form , function(data){
+        // unloadspiner function is in "global.js" file which set the button
         unloadspiner(btn);
         data = $.parseJSON(data);
         if(data.stat == 'ok')

@@ -23,19 +23,19 @@ class UserController extends Controller
         if(!$user)
         {
             $validator = Validator::make($request->all(), [
-                'name' => 'required|string|max:255',
+                'name'      => 'required|string|max:255',
                 'last_name' => 'required|string|max:255',
-                'email' => 'required|string|email|max:255',
+                'email'     => 'required|string|email|max:255',
             ]);
 
             if ($validator->fails()) {
                 jerror($validator);
             }
 
-            $user = new User();
-            $user->email = $request->input('email');
-            $user->name = $request->input('name');
-            $user->last_name = $request->input('last_name');
+            $user           = new User();
+            $user->email    = $request->input('email');
+            $user->name     = $request->input('name');
+            $user->last_name= $request->input('last_name');
             $user->password = Hash::make($request->input('email'));
             $user->save();
         }
